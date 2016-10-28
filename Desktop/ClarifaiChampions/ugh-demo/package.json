@@ -1,0 +1,16 @@
+{
+  "name": "web-clarifai-demo",
+  "version": "1.0.0",
+  "description": "get tags, basic web demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-dom": "^15.3.2",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}

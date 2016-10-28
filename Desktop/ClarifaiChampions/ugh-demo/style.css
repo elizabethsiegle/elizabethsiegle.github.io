@@ -1,0 +1,33 @@
+mark {
+	background-color: #f0db4f;
+}
+
+.inputForm {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.inputForm input  {
+	text-align: center;
+}
+
+.imagePreview {
+	text-align: center;
+}
+
+.tags-container {
+	text-align: center;
+}
+
+.errorBox {
+	color: red;
+}
+
+#image {
+	margin: auto;
+    width: 40%;
+    height:20%;
+    border: 2px solid green;
+    padding: 7px;
+
+}
