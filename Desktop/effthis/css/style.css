@@ -1,0 +1,72 @@
+mark {
+	background-color: #f0db4f;
+}
+
+.inputForm {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.inputForm input  {
+	text-align: center;
+}
+
+.imagePreview {
+	text-align: center;
+}
+
+.tags-container {
+	text-align: center;
+}
+
+.errorBox {
+	color: red;
+}
+
+#image {
+	margin: auto;
+    width: 40%;
+    height:60%;
+    border: 2px solid green;
+    padding: 7px;
+}
+
+html, body {
+	height:100%;
+	margin: 0 auto;
+	text-align:center;
+}
+
+html {
+	display: table;
+	width:100%;
+}
+
+body {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	/*margin: 0 0 50px;*/
+	height:100%;
+
+}
+footer {
+
+    background:#B2B2FF;
+    position: fixed;  
+bottom: 0px;
+width:100%;
+   /* position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;*/
+}
+
+a {
+    color: #FF69B4;
+}
+a:hover {
+    color:purple;
+}
+
