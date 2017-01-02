@@ -21,6 +21,7 @@
         </h1>
         <ul>
           <li id="about" class="nav"><a>About</a></li>
+          <li id = "projectsHacks" class = "nav"><a>Projects/Hacks</a></li>
           <li id="talksworkshops" class="nav"><a>Talks/Workshops</a></li>
           <li id="coffeetalk" class="nav"><a>Contact</a></li>
         </ul>
@@ -30,16 +31,16 @@
     <div class="about">
       <h1 class="hello_world">Hello, World!</h1>
       <p class="about__description">
-        &#9734;I grew up in Silicon Valley, but was not into STEM until attending <a href = "http://www.girlsteachinggirlstocode.org/"> Girls Teaching Girls to Code</a> right before finishing high school. For the eight years leading up to that, I planned on being a middle school math teacher, whereas my twin brother was the aspiring engineer of the family! </br></br>
+        &#9734;I grew up in Silicon Valley, but was not into STEM until attending <a href = "http://www.girlsteachinggirlstocode.org/"> Girls Teaching Girls to Code</a> right before finishing high school. For the eight years leading up to that, I planned on being a middle school math teacher (I wanted to make math fun and easy for those who, like myself, had struggled with it), whereas my twin brother was the aspiring engineer of the family! I'll never forget how he would receive legos and baseball books, which I enjoyed myself.  </br></br>
          
          &#9734;I'm a Computer Science major, English minor at <a href = "http://brynmawr.edu">Bryn Mawr College</a>, where I also play <a href = "http://athletics.brynmawr.edu/sports/wten/index">tennis</a> and TA for <a href = "http://cs.brynmawr.edu/content/">Intro to CS</a>.</br></br>
 
-        &#9734;I was a developer evangelist intern at <a href = "http://pubnub.com" target="_blank">PubNub</a> in SF this summer, where I built, <a href = "https://www.pubnub.com/blog/author/lizziepubnub-com/ target="_blank"">wrote</a>, and did <a href = "https://www.pubnub.com/blog/2016-08-25-what-its-like-to-intern-at-pubnub/" target="_blank">cool stuff.</a> To see code I've written, checkout my <a href = "https://github.com/elizabethsiegle" target="_blank">GitHub</a>, or at the link below.</br>  </br>
+        &#9734;I was a developer evangelist intern at <a href = "http://pubnub.com" target="_blank">PubNub</a> in SF this summer, where I built, <a href = "https://www.pubnub.com/blog/author/lizziepubnub-com/ target="_blank"">wrote</a>, and did <a href = "https://www.pubnub.com/blog/2016-08-25-what-its-like-to-intern-at-pubnub/" target="_blank">cool stuff.</a> To see code I've written, checkout my <a href = "https://github.com/elizabethsiegle" target="_blank">GitHub</a>, or at the link below.</br> </br>
  
         &#9734;I love musicals, Disney, Harry Potter, Star Wars, running, biking, and tennis (table and regular.) </br></br>
         
   
-        &#9734;I'm a part of a developer-evangelist-in-training program, <a href = "http://blog.clarifai.com/clarifai-champions-round-2-meet-our-newest-future-developer-evangelists/#.V9HcBZMrLVp" target="_blank"><span id="image">Clarifai Champions, </span></a> <!-- <div id = "clarifaiChampsPic"> --><!-- <div id = "hover"><img id = "clarifaiChampsPic" src = "images/clarifaichamps.jpg" /></div> --><!-- </div> --> </br></br>
+        &#9734;I'm a part of a developer-evangelist-in-training program, <a href = "http://blog.clarifai.com/clarifai-champions-round-2-meet-our-newest-future-developer-evangelists/#.V9HcBZMrLVp" target="_blank"><span id="image">Clarifai Champions </span>.</a> <!-- <div id = "clarifaiChampsPic"> --><!-- <div id = "hover"><img id = "clarifaiChampsPic" src = "images/clarifaichamps.jpg" /></div> --><!-- </div> --> </br></br>
       
 
         &#9734;I organize events like <a href = "http://sospectra.com" target="_blank">Spectra</a>, the Bay Area's largest women's hackathon and a series of meetups, and also <a href = "https://sheplusplus.org" target="_blank">She++</a> Code Day, in January, for over 70 students in the Bay Area. I'm currently planning the next one, and am looking for keynote speakers, panelists, and workshop leaders! Use one of my social media links if you're interested :) </br></br>
@@ -78,9 +79,42 @@
       </ul>
     </div>
     <hr>
+    <div class="projectsHacks">
+      <h1 class="title">Selected Projects, Hacks</h1>
+      <ul>
+         <li class="project">
+          <div class="project__title">Word-replacing Google Chrome extension(s)</div>
+           <div class="project__desc"><p class="project__info--desc">Can replace some form of "Dodgers" with "the worst team in baseball."</div>
+        </li>
+        <li class="project">
+          <div class="project__title"><a href = "https://github.com/pubnub/warriorsDataEon" target = "_blank">Realtime web data visualization of Warriors tweets</a></br></div>
+           <div class="project__desc"><p class="project__info--desc">Realtime piechart displaying tweets about the Warriors with PubNub's Twitter Stream and Project EON. Also compares number of tweets about them versus the number of tweets about their opponent.</div>
+        </li>
+
+        <li class="project">
+          <div class="project__title"><a href = "https://github.com/pubnub/swift-apple-watch-heart-rate-pubnub-eon" target = "_blank">Realtime iOS Heart Rate monitor with Raspberry Pi</a></br></div>
+          <div class="project__desc"><p class="project__info--desc">Detect heart rate on Apple Watch and display a realtime bar chart on the iPhone app. Raspberry Pi flashes LEDs based on heart rate data.</div>
+        </li>
+
+        <li class="project">
+          <div class="project__title"><a href = "https://github.com/pubnub/pokemongo-map-with-android-push-notifications" target = "_blank">Realtime Pokemon Go Android map </a></br></div>
+         <div class="project__desc"><p class="project__info--desc">Used external API found on Hacker News (no longer maintained) to show realtime map of Pokemon around your current location in Android webview. Used Ngrok.</div>
+        </li>
+         <li class="project" id = "project-last">
+          <div class="project__title"><a href = "https://github.com/pubnub/android-eon">Android Muni map</a></br></div>
+         <div class="project__desc"><p class="project__info--desc">Used Uber API, external Muni API, and PubNub's Project EON to display Muni buses around your location and the ability to call an Uber from within the Android app.
+        </div>
+        </li>
+      </ul>
+    </div>
+
     <div class="talksworkshops">
       <h1 class="title">Selected Speaking/Workshops</h1>
       <ul>
+         <li class="talk">
+          <div class="talk__title"><a href = "https://forwardjs.com" target = "_blank">ForwardJS</a></br> <span style ="font-size:12px">March 1, 2017. </br>San Francisco</span></div>
+           <div class="talk__desc"><p class="talk__info--desc">PubNub's Project EON</div>
+        </li>
         <li class="talk">
           <div class="talk__title"><a href = "https://www.alterconf.com" target = "_blank">AlterConf NYC</a></br> <span style ="font-size:12px">December 10, 2016. </br>Microsoft NYC</span></div>
            <div class="talk__desc"><p class="talk__info--desc">Diversity and Inclusion in Tech through a Hamilton lens.</div>

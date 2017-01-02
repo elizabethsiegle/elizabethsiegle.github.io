@@ -43,12 +43,13 @@ hr {
   line-height: 28px; 
 }
 
-.talk {
+.talk,
+.project {
   margin-bottom: 80px; 
 }
 
-
-#talk-last {
+#talk-last,
+#project-last {
   margin-bottom: 0px; 
 }
 
@@ -64,6 +65,7 @@ hr {
 .nav,
 .about__link,
 .talk,
+.project,
 .item {
   list-style: none; 
 }
@@ -194,17 +196,21 @@ p {
 }
 
 .talk__info,
-.talk__info--desc {
+.talk__info--desc,
+.project__info,
+.project__info--desc {
   font-weight: normal;
   text-align: left; 
 }
 
-.talk__info {
+.talk__info,
+.project__info {
   color: #348c45;
   position: relative; 
 }
 
-.talk__info:after {
+.talk__info:after,
+.project__info:after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -264,12 +270,16 @@ a:hover {
 
 .talk__title,
 .talk__desc,
-.talk__info {
+.talk__info,
+.project__title,
+.project__desc,
+.project__info {
   display: inline-block;
   vertical-align: text-top; 
 }
 
-.talk__title {
+.talk__title,
+.project__title {
   text-align: center;
   position: absolute;
   right: 50%;
@@ -277,7 +287,8 @@ a:hover {
   margin-right: 50px; 
 }
 
-.talk__desc {
+.talk__desc,
+.project__desc {
   position: relative;
   font: 16px "Lekton", monospace;
   left: 50%;
@@ -323,26 +334,33 @@ footer a {
   }
   .talk__title,
   .talk__desc,
-  .talk__info {
+  .talk__info,
+  .project__title,
+  .project__desc,
+  .project__info {
     display: block;
     text-align: center; 
   }
-  .talk__title {
+  .talk__title,
+  .project__title {
     margin: 0 auto;
     position: initial;
     width: 300px; 
   }
-  .talk__desc {
+  .talk__desc,
+  .project__desc {
     margin-top: 30px;
     margin: 0 auto;
     position: initial;
     padding: 0px 10px; 
     width: 300px; 
   }
-  .talk__info {
+  .talk__info,
+  .project__info {
     margin: 0; 
   }
-  .talk__info--desc {
+  .talk__info--desc,
+  .project__info--desc {
     text-align: center; 
   } 
 }

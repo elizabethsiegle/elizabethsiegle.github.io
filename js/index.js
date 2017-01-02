@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.about, .talksworkshops, .coffeetalk, .press').css({'visibility':'hidden'});
+  $('.about, .talksworkshops, .projectsHacks .coffeetalk, .press').css({'visibility':'hidden'});
 
   $(window).scroll(function() { 
     var height = $(window).scrollTop();
@@ -10,11 +10,12 @@ $(document).ready(function() {
     }
 
     if (height > 1190) { 
+      $('.projectsHacks').css({"visibility": "visible"}).addClass('animated fadeIn');
       $('.talksworkshops').css({"visibility": "visible"}).addClass('animated fadeIn');
     }
 
     
-      $('.coffeetalk').css({"visibility": "visible"}).addClass('animated fadeIn');
+    $('.coffeetalk').css({"visibility": "visible"}).addClass('animated fadeIn');
 
   });
 
@@ -29,6 +30,12 @@ $(document).ready(function() {
   $('body').on('click', '#coffeetalk', function() {
     $('html, body').animate({
         scrollTop: $(".coffeetalk").offset().top
+    }, 500);
+    return false;
+  });
+  $('body').on('click', '#projectsHacks', function() {
+    $('html, body').animate({
+        scrollTop: $(".projectsHacks").offset().top
     }, 500);
     return false;
   });
