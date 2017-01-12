@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>PubNub EON.js + Twitter Stream x SM Hacks</title>
+		<meta name="description" content="SMHacks PubNub Project EON Workshop">
+		<meta name="author" content="Lizzie Siegle">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		 <link href="https://fonts.googleapis.com/css?family=Allura|Amatic+SC" rel="stylesheet">
+		<script type="text/javascript" src="http://pubnub.github.io/eon/v/eon/0.0.10/eon.js"></script>
+	</head>
+	<body>
+	<header>
+		<h2>Realtime PubNub EON.js Twitter Stream Data Visualization x SM Hacks</h2>
+		<p id = "header">This chart, once loaded, shows which movie is being tweeted about the most. </p>
+	</header>
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PZWSZ2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<div class= "movieData">
+			<div id = "hoverImg"></div>
+			<div id = "chart"></div> 
+		</div>
+		<div style = "clear: both;"></div>
+<script>
+	var singWords = [
+		'sing movie', '#singmovie', 'sing film'
+	]
+	var rogueOneWords = [
+		'rogue one', 'rogueone', 'star wars', 'starwars', '#rogueone', 'rogue one box office', 'rogue one review'
+	]
+	var hiddenFiguresWords = [
+		'hiddenfigures', 'hidden figures', '#hiddenfigures', '#hiddenfiguresheroes', 'octavia spencer', 'janelle monae'
+	]
+	var lalalandWords = [
+		'lalaland', 'la la land', '#lalaland', 'emma stone', 'ryan gosling', '#lalalandmovie'
+	]
+	var moanaWords = [
+		'moana', 'disney moana', '#moana', 'maui', 'aulii cravalho', 'the rock'
+	]
+	var fencesWords = [
+		'fences', 'fences movie', 'fences film', '#fences', '#fencesmovie', 'denzel washington', 'viola davis'
+	]
+	var hiddenFencesWords = [
+		'hidden fences', 'hiddenfences', '#hiddenfences'
+	]
+	var numSingWords = 0;
+	var numRogueOneWords = 0;
+	var numHiddenFiguresWords = 0;
+	var numLaLaLandWords = 0;
+	var numMoanaWords = 0;
+	var numFencesWords = 0;
+	var numHiddenFencesWords = 0;
+	var channel = 'pubnub-twitter';
+	var pubnubTweet = PUBNUB.init({
+	  subscribe_key: 'sub-c-78806dd4-42a6-11e4-aed8-02ee2ddab7fe', //get tweets containing key words for Twitter chan
+	  ssl: true
+	}); //pubnub
+	getStreamData();
+	// fetch previous 75 Tweets, then realtime stream
+	 function getStreamData() {
+       pubnubTweet.history({
+        channel: channel,
+        count: 75,
+        callback: function(messages) {
+          pubnubTweet.each(messages[0], processData);
+        }
+      });
+    pubnubTweet.subscribe({
+        channel: channel,
+        callback: processData
+      });
+  }
+	var totalNumTweets = 0;
+	function processData(data) {
+	  if (!data) DOCUMENT.getElementById('chart') = "Data is loading.";
+	  if (singWords.some(function(v) {
+	      return data.text.toLowerCase().indexOf(v) !== -1;
+	    })) {
+	    numSingWords += 1;
+	    publish2();
+	    console.log(data);
+	  } else if (rogueOneWords.some(function(v) {
+	      return data.text.toLowerCase().indexOf(v) !== -1;
+	    })) {
+	    numRogueOneWords += 1;
+	    totalNumTweets += 1;
+	    publish2();
+	    console.log(data);
+	  } else if (hiddenFiguresWords.some(function(v) {
+	      return data.text.toLowerCase().indexOf(v) !== -1;
+	    })) {
+	    numHiddenFiguresWords += 1;
+	    totalNumTweets += 1;
+	    publish2();
+	    console.log(data);
+	  } else if (fencesWords.some(function(v) {
+	      return data.text.toLowerCase().indexOf(v) !== -1;
+	    })) {
+	    numFencesWords += 1;
+	    totalNumTweets += 1;
+	    publish2();
+	    console.log(data);
+	  } else if (lalalandWords.some(function(v) {
+	      return data.text.toLowerCase().indexOf(v) !== -1;
+	    })) {
+	    numLaLaLandWords += 1;
+	    totalNumTweets += 1;
+	    publish2();
+	    console.log(data);
+	  } else if (moanaWords.some(function(v) {
+	      return data.text.toLowerCase().indexOf(v) !== -1;
+	    })) {
+	    numMoanaWords += 1;
+	    totalNumTweets += 1;
+	    publish2();
+	    console.log(data);
+	  } 
+	  else if (hiddenFencesWords.some(function(v) {
+	      return data.text.toLowerCase().indexOf(v) !== -1;
+	    })) {
+	    numHiddenFencesWords += 1;
+	    totalNumTweets += 1;
+	    publish2();
+	    console.log(data);
+	  } 
+	  //bestFans();
+	} //processData()
+	var pubnubEon = PUBNUB.init({
+	  subscribe_key: 'sub-c-ec13adb2-2164-11e6-9327-02ee2ddab7fe', //different subscribe from Twitter
+	  publish_key: 'pub-c-01ea45a2-75a8-40af-8db0-578d519eed0e' //separate keyset generated, paired with new subscribe key
+	});
+	//publish chart
+	var smHacksChan = 'smHacksChannel';
+	function publish2() {
+	  pubnubEon.publish({
+	    channel: smHacksChan,
+	    message: {
+	      eon: {
+	        "La La Land": numLaLaLandWords / totalNumTweets,
+	        "Moana": numMoanaWords / totalNumTweets,
+	        "Hidden Figures": numHiddenFiguresWords / totalNumTweets,
+	        "Rogue One": numRogueOneWords / totalNumTweets,
+	        "Fences": numFencesWords / totalNumTweets,
+	        "Sing": numSingWords / totalNumTweets,
+	        "Hidden Fences": numHiddenFencesWords / totalNumTweets
+	      }
+	    }, //msg
+	    callback: function(m) {
+	        console.log(m)
+	      } //callback
+	  }); //pubnubEon
+	} //publish
+	//embed chart
+	eon.chart({
+	  channel: smHacksChan,
+	  pubnub: pubnubEon,
+	  generate: {
+	    bindto: '#chart',
+	    data: {
+	      labels: true,
+	      type: 'donut', //bar
+	      colors: {
+	        'Moana': 'blue',
+	        'Sing': 'red',
+	        'Hidden Fences': 'green',
+	        'Rogue One': 'gray',
+	        'La La Land': 'pink',
+	        'Hidden Figures': 'purple',
+	        'Fences': 'brown'
+	      } //colors	
+	    }, //data
+	    legend: {
+	      show: true,
+	      item: {
+	        onmouseover: function(id) {
+	          //could also get pics easily straight from Warriors website instead of having in img folder
+	          if (id == "Moana") {
+	            document.getElementById('hoverImg').innerHTML = "<img src='img/moana.jpg' border=0/></a>";
+	            document.getElementById("hoverImg").style.transitionDuration = "10s";
+	          } else if (id == "Sing") {
+	            document.getElementById('hoverImg').innerHTML = "<img src='img/sing.jpg' border=0/></a>";
+	            document.getElementById("hoverImg").style.transitionDuration = "10s";
+	          } else if (id == "Hidden Fences") {
+	            document.getElementById('hoverImg').innerHTML = "<img src='img/hiddenfences.jpg' border=0/></a>";
+	            document.getElementById("hoverImg").style.transitionDuration = "10s";
+	          } else if (id == "Rogue One") {
+	            document.getElementById('hoverImg').innerHTML = "<img class = 'resize' src='img/rogueone.jpg' border=0/></a>";
+	            document.getElementById("hoverImg").style.transitionDuration = "10s";
+	          } else if (id == "La La Land") {
+	            document.getElementById('hoverImg').innerHTML = "<img src='img/lalaland.jpg' border=0/></a>";
+	            document.getElementById("hoverImg").style.transitionDuration = "10s";
+	          } else if (id == "Hidden Figures") {
+	            document.getElementById('hoverImg').innerHTML = "<img src='img/hiddenfigures.jpg' border=0/></a>";
+	            document.getElementById("hoverImg").style.transitionDuration = "10s";
+	          } else if (id == "Fences") {
+	            document.getElementById('hoverImg').innerHTML = "<img class = 'resize' src='img/fences.jpg' border=0/></a>";
+	            document.getElementById("hoverImg").style.transitionDuration = "10s";
+	          } 
+	        }, //onmouseover
+	        //onmouseout, img goes away
+	        onmouseout: function(id) {
+	            if (id == "Moana") {
+	              document.getElementById('hoverImg').innerHTML = " ";
+	              document.getElementById("hoverImg").style.transitionDuration = "10s";
+	            } else if (id == "Sing") {
+	              document.getElementById('hoverImg').innerHTML = " ";
+	              document.getElementById("hoverImg").style.transitionDuration = "10s";
+	            } else if (id == "Hidden Fences") {
+	              document.getElementById('hoverImg').innerHTML = " ";
+	              document.getElementById("hoverImg").style.transitionDuration = "10s";
+	            } else if (id == "Rogue One") {
+	              document.getElementById('hoverImg').innerHTML = " ";
+	              document.getElementById("hoverImg").style.transitionDuration = "10s";
+	            } else if (id == "La La Land") {
+	              document.getElementById('hoverImg').innerHTML = " ";
+	              document.getElementById("hoverImg").style.transitionDuration = "10s";
+	            } else if (id == "Hidden Figures") {
+	              document.getElementById('hoverImg').innerHTML = " ";
+	              document.getElementById("hoverImg").style.transitionDuration = "10s";
+	            } else if (id == "Fences") {
+	              document.getElementById('hoverImg').innerHTML = " ";
+	              document.getElementById("hoverImg").style.transitionDuration = "10s";
+	            } //last else if
+	          } //onmouseout 	
+	      } //legend.item
+	    }, //legend
+	    tooltip: {
+	      show: false //gets rid of hover legend
+	    },
+	    axis: {
+	      x: {
+	        label: 'Movie'
+	      }, //x
+	      y: {
+	        label: 'Number of Tweets'
+	      } //y
+	    } //axis
+	  } //generate
+	}); //eon.chart
+	
+	</script>
+	</body>
+	<footer>
+		<img class="logo" src="img/pubnub_logo.png">
+		<p id = "leftP">PubNub <a href="https://twitter.com/hashtag/projecteon" target="_blank">#projecteon</a> demo by <a href="https://twitter.com/lizziepika" target="_blank">@lizziepika</a></p>
+	</footer>
+</html>

@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+}
+/*may like to change these colors */
+h2 {
+  font-color: white;
+}
+a:link:hover, a:visited:hover {
+	color: red;
+}
+
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: purple;
+}
+
+html {
+	height: 100%;
+}
+
+/*Google Fonts for different fonts */
+h3, h2 {
+	font-family: 'Allura', sans-serif;
+}
+
+body {
+	/*play around with background color! */
+	background: #FFB75E; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #FFB75E , #ED8F03); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #FFB75E , #ED8F03); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  	font-family: 'Amatic', cursive;
+  	margin: 1.5em;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+
+}
+
+#scrollDivPic {
+	position: relative;
+}
+
+.movieData {
+	position: relative;
+}
+
+.movieData img {
+	position: absolute;
+	top:0px;
+	right:1em;
+	width:25%;
+}
+
+#chart {
+	padding: 2.5%;
+	margin-top: -10%;
+	min-height: 320px;
+}
+
+#hoverImg {
+	margin-top: 10%;
+	right:0;
+}
+
+#header {
+	font-style: italic;
+	margin-top: 3%;
+	display: flex;
+	justify-content: center;
+}
+
+.resize {
+	margin-top: 5%;
+	width: 15%;
+	height: 35%;
+}
+.resize2 {
+	margin-top: 5%;
+	width: 25%;
+	height: 35%;
+}
+
+.container {
+	margin-top: 2em;
+}
+
+.textContainer {
+	float: left;
+	margin-right: 2em;
+
+}
+
+footer {
+	font-size: .8em;
+   	width:100%;
+   	text-align: right;
+}
