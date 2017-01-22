@@ -191,6 +191,14 @@ p {
   line-height: 80px; 
 }
 
+.subtitle {
+  font-color: #4286f4;
+  font: 25px "Allura", sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 80px; 
+}
+
 .home {
   margin-bottom: 100px; 
 }
