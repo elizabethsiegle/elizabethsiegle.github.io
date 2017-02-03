@@ -9,6 +9,7 @@
     <script src = "js/custom.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <script src="./js/js2.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +32,23 @@
           <li id="talksworkshops" class="nav"><a>Talks/Workshops</a></li>
           <li id="coffeetalk" class="nav"><a>Contact</a></li>
         </ul>
-      <img class="heading-img" src="./images/googletalk.jpg">
+        <div class = "gallery" align ="center">
+          <div class = "thumbnails">
+            <img onmouseover="preview.src=img1.src" name="img1" src="./images/googletalk.jpg" alt="#SFHTML5 talk @ Google SF" />
+       <!--      <img onmouseover="'preview.src=img1.src';" name="img1" src="./images/googletalk.jpg" alt="#SFHTML5 talk @ Google SF" /> -->
+           <!-- <img onmouseover="preview.src= img2.src" /images/sheppggbridge.jpg); textChange1();" -->
+            <img onmouseover="preview.src=img2.src" name="img2" src="./images/sheppggbridge.jpg" alt="She++ visits SF" />
+            <img onmouseover="preview.src=img3.src" name="img3" src="./images/pacheights.jpg" alt="Lower Pacific Heights, San Francisco" />
+            <img onmouseover="preview.src=img4.src" name="img4" src="./images/ggbridge.jpg" alt="Golden Gate Bridge, May 2014" />
+            <img onmouseover="preview.src=img5.src" name="img5" src="./images/squaretalk.jpg" alt="Square WomEng talk August 2016" />
+            <img onmouseover="preview.src=img6.src" name="img6" src="./images/sheppsummit.jpg" alt="She++ Summit 2016" />
+            <img onmouseover="preview.src=img7.src" name="img7" src="./images/earlybirds.jpg" alt="Twitter Early Bird Android camp" />
+            <div class="preview" align="center">
+              <img name="preview" src="images/squarewomengjack.jpg" alt="Square WomEng Hear and Now speakers w/ Jack Dorsey"/>
+            </div>
+            <div id = "pic_text"></div>
+          </div>
+      
     </div> <!--heading-->
      <hr>
     <div class="about">

@@ -399,6 +399,25 @@ footer a {
   font-family: 'Mystery Quest', cursive;
 }
 
+.thumbnails img {
+    height: 80px;
+    border: 4px solid #555;
+    padding: 1px;
+    margin: 0 10px 10px 0;
+  }
+
+  .thumbnails img:hover {
+    border: 4px solid #00ccff;
+    cursor:pointer;
+  }
+
+  .preview img {
+    border: 4px solid #444;
+    padding: 1px;
+    height:900px;
+    width: 55%;
+  }
+
 /*span:hover:after {
   content:url("images/clarifaichamps.jpg");
   display:block;

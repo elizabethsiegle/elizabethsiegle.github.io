@@ -14,6 +14,7 @@ $(document).ready(function() {
       $('.talksworkshops').css({"visibility": "visible"}).addClass('animated fadeIn');
     }
 
+
     
     $('.coffeetalk').css({"visibility": "visible"}).addClass('animated fadeIn');
 
