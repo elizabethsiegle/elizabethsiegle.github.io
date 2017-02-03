@@ -242,13 +242,17 @@ a:hover {
   padding-top: 125px; 
 }
 
+.coffeetalk:after {
+  height: 142px;
+}
 .coffeetalk {
-  margin-left:-5px;
+  /*margin-left:-5px;
   width:110%;
   height:50px;
   text-align: center;
   background-color: black;
-  color: white;
+  color: white;*/
+  background: black;
 }
 
 .heading {
