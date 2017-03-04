@@ -1,0 +1,5 @@
+{% extends "master.stencil" %} <!--must be first thing -->
+{% block body %}
+	<marquee>lol</marquee>
+{% endblock %}
+
