@@ -1,0 +1,6 @@
+{% extends "master.stencil" %} <!--must be first thing -->
+{% block body %}
+<h1> Welcome lol</h1> <!--merges with template inherits from -->
+{% endblock %}
+
+{% block title%} "Welcome" {% endblock %}

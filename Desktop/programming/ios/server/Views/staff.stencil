@@ -1,0 +1,20 @@
+{% extends "master.stencil" %} <!--must be first thing -->
+{% block body %}
+	{% if name %} <!--stencil: if has name, can use it -->
+		<h1>{{ name|capitalize }}</h1> <!-- print with double braces -->
+		<p> {{ bio}} </p>
+	{% else %} <!--no name set -->
+		<h1> Unknown staff member </h1>
+		<p> We didn't recognize that person </p>
+	{% endif %}
+	<p> Choose a staff member to view</p>
+
+	<ul>
+		{% for person in people %} <!--just like swift, but w/ more braces + % -->
+		<li><a href ="/staff/{{ person }}"> <!--inject name into hyperlink --> {{person|capitalize}}</a></li>
+		{% empty %}
+		<li>No staff members found</li>
+		{% endfor %}
+	</ul>
+	
+{% endblock %}
