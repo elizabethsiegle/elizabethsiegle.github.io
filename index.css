@@ -243,15 +243,9 @@ a:hover {
 }
 
 .coffeetalk:after {
-  height: 142px;
+  height: 100px;
 }
 .coffeetalk {
-  /*margin-left:-5px;
-  width:110%;
-  height:50px;
-  text-align: center;
-  background-color: black;
-  color: white;*/
   background: black;
 }
 
@@ -421,6 +415,18 @@ footer a {
     height:50%;
     width: 50%;
   }
+  .talksworkshops {
+    padding: 10;
+  }
+  /* FOOTER */
+  .coffeetalk {
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 20px 0; 
+}
+
 
 /*span:hover:after {
   content:url("images/clarifaichamps.jpg");
