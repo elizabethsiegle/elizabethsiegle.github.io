@@ -1,5 +1,5 @@
 body {
-  background-color:#a8bde0;
+  background-color: #b3b3ff;
   margin-bottom:-50px;
   min-height: 100%;
   margin:0;
@@ -22,6 +22,20 @@ hr {
 }
 .@{fa-css-prefix}-lg {
   font-size: 35px;
+}
+
+.project {
+  margin-left:10%;
+  margin-right:10%;
+  padding-top:1.5%;
+  background-color: #8585ad;
+}
+.talk {
+  background-color: #8585ad;
+  padding-bottom: 4%;
+  padding-top:4%;
+  margin-right:10%;
+  margin-left: 10%;
 }
 
 .about__links, 
