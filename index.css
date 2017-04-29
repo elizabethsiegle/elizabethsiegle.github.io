@@ -52,6 +52,7 @@ hr {
 .nav,
 .about__description,
 .contact__desc,
+.press__desc,
 .mailto {
   font: 16px "Lekton", monospace;
   line-height: 28px; 
@@ -429,8 +430,16 @@ footer a {
     height:50%;
     width: 50%;
   }
-  .talksworkshops {
+  .talksworkshops,
+  .press__desc {
     padding: 10;
+  }
+
+  .press__desc,
+  .press {
+    text-align: center;
+   /* margin: 0;
+    padding: 20px 0;*/
   }
   /* FOOTER */
   .coffeetalk {

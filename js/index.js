@@ -14,7 +14,7 @@ $(document).ready(function() {
       $('.talksworkshops').css({"visibility": "visible"}).addClass('animated fadeIn');
     }
 
-
+    $('.press').css({"visibility": "visible"}).addClass('animated fadeIn');
     
     $('.coffeetalk').css({"visibility": "visible"}).addClass('animated fadeIn');
 
@@ -44,6 +44,13 @@ $(document).ready(function() {
   $('body').on('click', '#talksworkshops', function() {
     $('html, body').animate({
         scrollTop: $(".talksworkshops").offset().top
+    }, 500);
+    return false;
+  });
+
+  $('body').on('click', '#press', function() {
+    $('html, body').animate({
+        scrollTop: $(".press").offset().top
     }, 500);
     return false;
   });
