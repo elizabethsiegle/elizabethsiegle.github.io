@@ -38,6 +38,28 @@ hr {
   margin-left: 10%;
 }
 
+#news-banner {
+  background-color:#24823C; /* Changes the headline's background color */
+}
+
+#news-banner .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em; 
+  box-sizing:border-box;
+}
+
+#news-banner .container h2 {
+  color: #ffffff; 
+  font-family: "Komika Axis"; 
+  font-size: 1.5em; 
+  font-weight: 500; 
+  letter-spacing: 0.05em; 
+  margin: 0 auto 0em;
+  text-align: center; 
+  text-shadow:0 0 10px #004F09; 
+}
+
 .about__links, 
 .skills__links {
   text-align: center; 
