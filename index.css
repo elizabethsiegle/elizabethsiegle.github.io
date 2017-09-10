@@ -55,6 +55,14 @@ body {
 .icons a:active {
     text-decoration: #222222;
 }
+a:hover {
+  color:pink;
+  font-weight: bold;
+  font-size:20px;
+}
+a:visited {
+  color: purple;
+}
     
 * {
   margin: 0;
