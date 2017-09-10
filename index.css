@@ -2,16 +2,6 @@ body {
     background-color: #FFFFFF;
 }
 
-.p {
-    font-family: 'Merriweather', serif;
-    font-weight:300;
-    font-size: 9pt;
-    letter-spacing: 0.2px;
-    line-height: 265%;
-    max-width: 50ch;
-    color: #484848;
-} 
-
 .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -39,14 +29,11 @@ body {
    color: #484848;
    text-decoration: underline; 
 }
-
 .icons {
-    position:absolute;
-    bottom:0px;
-    width: 100%;
-    margin: 0;
-    
-    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #484848;
+    font-size: 20pt;
 }
 
 .icons a:link, a:visited {
