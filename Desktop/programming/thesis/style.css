@@ -1,0 +1,60 @@
+/*
+index.html page
+*/
+
+.span2 {
+	width:10%;
+}
+.text-center {
+	width:50%;
+	margin: 10%;
+}
+
+/*
+guessemotions.html
+*/
+p {
+    text-align: center;  
+}
+
+
+/*
+guess emotion page
+*/
+
+.emotion_img{
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 width: 500px;
+	 height: 500px;
+	 margin-top: -250px; /* Half the height */
+	 margin-left: -250px; /* Half the width */
+}
+
+.question_box {
+	text-align: center;
+}
+
+.guess_button {
+    z-index:999;
+    margin-top: 10%;
+    width:181px;
+    border-radius:10px;
+}
+/*.buttonimg{
+    width:auto;
+    height:auto;
+}*/
+
+.button{
+    width:110px;
+    border:1px solid #900;
+    margin-left: 5px;
+    line-height:20px;
+}
+.action-container{
+    display:inline-block;
+    margin-bottom: 5px;
+}
+
