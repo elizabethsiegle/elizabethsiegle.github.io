@@ -2,11 +2,12 @@ body {
     background-color: #FFFFFF;
 }
 
-.title {
+.typewrite, .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #484848;
     font-size: 20pt;
+    margin-left: 5px;
 }
 
 .aboutme  {
