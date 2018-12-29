@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/byliuyang/github-stats@0.0.4/src/github-stats.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="sadrzaj-Type" sadrzaj="text/html; charset=utf-8" />
   <title>Lizzie Siegle</title>
@@ -18,35 +19,139 @@
   <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+   <!-- Smooth Scroll by cferdinadni -->
+        <script src="js/smooth-scroll.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
   <!-- i c o n s -->  
-  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">    
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- For infinite Scroll -->
+            <div class="container navbar-container">
+                <!-- <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div> -->
+            </div>
+            <div id="navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                      <a data-scroll href="#about">
+                            About
+                      </a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#past">Past</a>
+                    </li> 
+                    <li>
+                        <a data-scroll href="#press">Press</a>
+                    </li> 
+                    <li>
+                        <a data-scroll href="#talks">Talks</a>
+                    </li> 
+                    <li>
+                        <a data-scroll href="#contact">Contact</a>
+                    </li> 
+                </ul>
+            </div>
+        </nav>
   <header>
+    <img src = "https://i.ytimg.com/vi/QYDlVb1Jp2I/maxresdefault.jpg" alt="Lizzie picture" style="width:20%;height:20%;margin: -10%">
       <hgroup>
           <div id="outer">
             <div class="inner"> 
-               <h1 class = "">Lizzie Siegle</h1>
-              <h1 class= "typewrite" data-period="2000" data-type='[ "Hi, I&apos;m Lizzie!", "iOS, web dev", "developer evangelist", "public speaker", "builder"]'>
+              <h1 class= "typewrite" data-period="2000" data-type='[ "Hi, I&apos;m Lizzie!", "iOS, web developer", "developer evangelist", "public speaker", "hackathon enthusiast && organizer"]'>
               </h1>
               <h1 class = "title"> "Grass doesn't grow beneath my feet"
               </h1>
+            </div>
+          </div>
       </hgroup>
     </header>
       <section>
-      <p>I’m a <span style="color:blue">software developer</span> based in SF currently serving developers on <a href="https://twilio.com">Twilio</a>'s <span style="color:blue">Developer Evangelism</span> team. I also help organize <a href = "https://sospectra.com" target="_blank">Spectra</a>, a hackathon for womxn and non-binary people, and curate tech events, jobs, blog posts, and GitHub repos for my monthly <a href = "https://tinyletter.com/lizziepika" target="_blank">newsletter</a>.</p>
-      <p>I'm a proud Bryn Mawr <a href = "https://cs.brynmawr.edu" target="_blank">computer science</a> alumna. While there, I also played tennis and table tennis and worked 5 jobs (in the cafeteria, library, as a CMSC110 and CMSC206 <span style="color:blue">Teaching Assistant</span>, as an <a href = "http://lizzie.blogs.brynmawr.edu/" target="_blank">Admissions blogger</a>, and a <a href = "https://codehs.com" target="_blank">CodeHS</a> <span style="color:blue">tutor</span>). For my <a href = "https://elizabethsiegle.github.io/thesis">senior thesis</a> I developed a series of Django apps and a corresponding iOS app to compare methods of teaching emotions to people on the Autism spectrum.</p>
+      <p id = "about">I’m a <span style="color:blue">software developer</span> with the privilege of serving developers on <a href="https://twilio.com">Twilio</a>'s <span style="color:blue">Developer Evangelism</span> team and helping organize <a href = "https://sospectra.com" target="_blank">Spectra</a>, a hackathon for womxn and non-binary people, and curating tech events, jobs, blog posts, and GitHub repos for my monthly <a href = "https://tinyletter.com/lizziepika" target="_blank">newsletter</a>.</p>
+      
+      <div id="github-languages"> </div>
+      <div id="github-contributions"></div>
+        <script>
+      (async () => {
+    const GITHUB_USERNAME = 'elizabethsiegle';
+    const COMMITS_CONTAINER = '#github-contributions';
+    const LANGUAGES_CONTAINER = '#github-languages';
+
+    const githubStats = await GithubStats('elizabethsiegle');
+
+    let githubCommits = document.querySelector(COMMITS_CONTAINER);
+    /* Render SVG for commit contributions */
+    let commitsContribSVG = githubStats.commitsContribSVG({
+        rows: 7,
+        space: 4,
+        rectWidth: 12,
+        levelColors: [
+            {
+                minCommits: 0,
+                color: '#ebedf0'
+            },
+            {
+                minCommits: 1,
+                color: '#c6e48b'
+            },
+            {
+                minCommits: 9,
+                color: '#7bc96f'
+            },
+            {
+                minCommits: 17,
+                color: '#239a3b'
+            },
+            {
+                minCommits: 26,
+                color: '#196127'
+            }
+        ]
+    });
+    githubCommits.appendChild(commitsContribSVG);
+
+    let githubLanguageDistribution = document.querySelector(LANGUAGES_CONTAINER);
+    /* Render SVG for language contributions */
+    let languageContribSVG = githubStats.languagesContribSVG({
+        barHeight: 12,
+        barWidth: githubLanguageDistribution.offsetWidth,
+        lineSpacing: 2.5,
+        languageNameWidth: 75,
+        fontSize: 10
+    });
+    githubLanguageDistribution.appendChild(languageContribSVG);
+})();
+    </script>
+      <p id = "past">I studied <a href = "https://cs.brynmawr.edu" target="_blank">computer science</a> at Bryn Mawr where I also played 🎾 and 🏓 and worked 5 jobs (in the cafeteria, library, as a CMSC110 and CMSC206 <span style="color:blue">Teaching Assistant</span>, as an <a href = "http://lizzie.blogs.brynmawr.edu/" target="_blank">Admissions blogger</a>, and as a <a href = "https://codehs.com" target="_blank">CodeHS</a> <span style="color:blue">tutor</span>).</p>
+      <figure>
+      <img src = "https://pbs.twimg.com/media/DcMxhFgVAAA8SjO.jpg:large" alt="Thesis iOS demo" style="width:50%;height:50%;margin:2.5%">
+      <figcaption>
+        For my <a href = "https://elizabethsiegle.github.io/thesis">senior thesis</a> I developed a series of Django apps and corresponding iOS app to compare methods of teaching emotions to people on the Autism spectrum.
+      </figcaption>
+      </figure>
       <!-- <p>I also organized <a href = "https://www.eventbrite.com/e/she-code-day-san-mateo-county-tickets-20003699604?aff=es2#">SHE++ Code Day</a> as a <a href="http://sheplusplus.org" target="_blank">SHE++</a> Ambassador, <span style="color:blue">learned Android</span> with 15 other under-represented minority college sophomores at <a href = "https://twitterearlybirdcamp.splashthat.com/">Twitter Early Bird Camp</a> (building <a href ="https://github.com/elizabethsiegle/Unagi-task-manager" target = "_blank">Unagi</a>), <span style="color:blue">learned Ruby</span> at <a href = "https://squareup.com/code-camp">Square Code Camp</a> with 11 other college womxn (building <a href = "https://github.com/melaniejanepascual/bizzbuzz" target = "_blank">BizzBuzz</a>), and competed in a few hackathons (won Best Use of Viacom Data-Point API at <a href = "https://yhack.org" target="_blank">Y-Hack 2017</a>). </p> -->
-      <p>Selected press includes:
-        <a href ="https://player.fm/series/all-javascript-podcasts-by-devchattv/mjs-069-lizzie-siegle" target="_blank">JS Jabber</a>,
+      <p id = "press">Selected press includes:
+        <a href ="https://player.fm/series/all-javascript-podcasts-by-devchattv/mjs-069-lizzie-siegle" target="_blank">JS Jabber podcast</a>,
         <a href ="https://www.facebook.com/womenofsiliconvalley/photos/ms.c.eJw9jskNxDAMAztaiDIliv03Fqzj~_DsYHqA6OqDkanP9QNWsGZWcjP6DDkfKiCj7Gpksh~_Y1SszkUuKANlFqr8ovQhlZko8BT0kRrs8wdmnfFc2OcC7wNganQy4jchbuMb7X~;QBpyS0Q.bps.a.1475831279126499.1073741831.826731544036479/1475838912459069/?type=3&theater" target = "_blank">Women of Silicon Valley</a>,
         <a href ="https://technical.ly/philly/2016/12/08/diversity-inclusion-hamilton/" target = "_blank">Technical.ly Philly</a>,
         <a href = "http://www.seventeen.com/life/real-girl-stories/g2926/photos-of-girls-most-confident-moments/?slide=7" target = "_blank">Seventeen Magazine</a>,
-        <a href="https://www.chapter1.io/2018/04/a-day-in-life-as-intern-as-developer.html" target="_blank">Chapter One</a>,
+        <a href="https://www.chapter1.io/2018/04/a-day-in-life-as-intern-as-developer.html" target="_blank">Chapter 1</a>,
         <a href = "http://athletics.brynmawr.edu/sports/wten/2016-17/releases/20160816gv8ooz" target = "_blank">Bryn Mawr Athletics</a>,
         <a href = "https://medium.com/read-write-code/meet-a-tutor-lizzie-siegle-f218c81b2e1d" target = "_blank">CodeHS</a>, and
-        <a href = "https://reigningit.wordpress.com/2016/02/24/omen-who-reign-lizzie-siegle/" target = "_blank">Reigning It</a>.</p>
-        <p>Past talks include: <ul style="list-style-type:none">
+        <a href = "https://reigningit.wordpress.com/2016/02/24/omen-who-reign-lizzie-siegle/" target = "_blank">Reigning It</a>.
+        <figure>
+        <img src = "https://hips.hearstapps.com/sev.h-cdn.co/assets/16/41/1476482156-img-3923.JPG?crop=1xw:1.0xh;center,top&resize=980:*" alt="Seventeen Most Confident Moments" style="width:50%;height:50%;margin:2.5%">
+        <figcaption>Picture for <a href = "http://www.seventeen.com/life/real-girl-stories/g2926/photos-of-girls-most-confident-moments/?slide=7" target = "_blank">Seventeen Magazine</a> at Square HQ before my first technical talk.</figcaption>
+      </figure>
+      </p>
+        <p id = "talks">Past talks include: <ul style="list-style-type:none">
           <li><a href = "https://www.youtube.com/watch?v=QYDlVb1Jp2I" target="_blank">Make Fun, Make Music with Node.js</a> at <a href = "https://queensjs.com" target="_blank">QueensJS</a> 2016 and <a href = "http://caribbeandevconf.com" target="_blank">Caribbean Dev Conf 2018</a></li>
           <li><a href = "https://www.youtube.com/watch?v=XSkp24X-8_E" target="_blank">Parse NBA Statistics with Openpyxl</a> at <a href = "https://pybay.com/" target="_blank">PyBay</a> 2018</li>
           <li><a href = "https://alterconf.com/speakers/lizzie-siegle" target="_blank">Diversity && Inclusion through Hamilton</a> at <a href = "https://alterconf.com" target="_blank">AlterConf</a> NYC 2016</li>
@@ -55,9 +160,9 @@
           <li>Intro to PubNub and Devangelist Interning at <a href = "https://squarewomenghearnowcollegeedit.splashthat.com/" target="_blank">Square WomEng Hear and Now</a> August 2016</li>
         </ul>
         </p>
-        <p> In my spare time I play 🎾, 🏓, 🏃🏼‍♀️, do Zumba and 🧘🏽‍♀️, follow the Warriors, and obsess over all things Disney, Harry Potter, and Broadway. 
+        <p> In my spare time, I'm training for my 3rd half-marathon, rooting for the Warriors, and obsessing over all things Disney, Harry Potter, and Broadway. 
         </p>
-        <p>
+        <p id = "contact">
         I'm not looking for a job but my twin brother is. If you could use a stats major beginning in May 2019, feel free to reach out. You can schedule a <a href = "https://calendly.com/lizziepika" target = "_blank">videochat</a>  with me or also <a href="mailto:lsiegle@twilio.com" class="mailto">email</a>.
       </p>
     </section>
@@ -83,4 +188,5 @@
                 </div>
             </div>
         </footer>
+        <script>smoothScroll.init();</script>
 </body>

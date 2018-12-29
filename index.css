@@ -48,6 +48,26 @@ section p {
   text-align: center;
 }
 
+/*images, figures, borders, colors */
+img {
+  /*circular*/
+  border-radius: 50%;
+  border: 4px solid rgba(247, 143, 210);
+}
+
+figure {
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+li {
+  margin: 10px 0;
+}
+
 .typewrite, .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -100,4 +120,82 @@ a:visited {
 
 .inner {
     padding: 10% 5px 25px 5px;
+}
+/*nav */
+/* NAV */
+
+.nav {
+  float: none !important;
+  padding: 5%;
+  margin-bottom: 2%;
+}
+ul.navbar-nav li {
+  display:inline;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.navbar-inverse {
+  background-color: rgba(247, 143, 210); /*mistyrose*/
+  border-color: rgba(0, 0, 0, .5);
+}
+
+.navbar-fixed-top {
+  border-width: 0;
+  width: 100%;
+}
+
+.navbar-fixed-top .navbar-collapse {
+  max-height: 420px;
+}
+
+.navbar-fixed-top .navbar-nav li {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.navbar-fixed-top .navbar-nav a {
+  padding: 0px 0px 10px 4px;
+  color: #fff;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.navbar-fixed-top .navbar-nav li:hover a,
+.navbar-fixed-top .navbar-nav li.active a {
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+
+  .navbar-nav h3 {
+    margin-bottom: 10px;
+    float: none !important;
+  }
+  .asana-logo {
+    width: 50%;
+  }
+}
+
+.data-scroll a {
+  color: white;
+  text-decoration: none;
+}
+
+.col-half-offset{
+    margin-left:  1%
 }
