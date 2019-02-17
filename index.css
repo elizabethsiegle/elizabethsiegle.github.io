@@ -19,6 +19,10 @@ a:active {
   top: 1px;
 }
 
+html {
+   min-width: 940px;
+}
+
 /* Header */
 header {
   text-align: center;
