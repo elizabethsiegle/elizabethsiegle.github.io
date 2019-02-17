@@ -40,14 +40,14 @@ h2 {
   color: #aaa;
 }
 section {
-  width: 680px;
- text-align: center;
+  width: 500px;
+ /* text-align: center; */
   margin: 0 auto;
 }
 section p {
   /* margin: 0 0 1em; */
   color: #777;
-  font-size: 16px;
+  /* font-size: 16px; */
   /* line-height: 28px; */
   text-align: center;
 }
