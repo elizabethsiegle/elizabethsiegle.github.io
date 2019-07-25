@@ -21,6 +21,7 @@ a:active {
 
 html {
    min-width: 940px;
+   max-width: 940px;
 }
 
 /* Header */
