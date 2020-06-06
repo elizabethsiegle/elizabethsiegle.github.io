@@ -61,9 +61,6 @@ li.loves:before {
   content: '💕';
 }
 
-li.on:before {
-  content: '📱';
-}
 li.speak:before {
   content: '🗣';
 }
