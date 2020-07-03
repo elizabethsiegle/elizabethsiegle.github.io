@@ -24,6 +24,10 @@ a {
   font-weight: 700;
   text-decoration: none;
 }
+.typewrite {
+  font-size: 5rem;
+  line-height: 80%;
+}
 
 ul {
   list-style: none;
