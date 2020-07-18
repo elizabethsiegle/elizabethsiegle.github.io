@@ -34,23 +34,6 @@ ul {
   margin: 2.0rem 0;
 }
 
-#wrapper {
-  display: flex;
-  margin:0;
-}
-
-#left {
-  flex: 0 0 65%;
-  float:left;
-width:75%;
-}
-
-#right {
-  float: right;
-  flex: 1;
-  margin-left: 50%;
-}
-
 li {
   margin: 0.75rem 0;
   padding-left: 2.0rem;
