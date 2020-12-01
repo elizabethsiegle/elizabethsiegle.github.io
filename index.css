@@ -81,8 +81,11 @@ li.press:before {
 li.press_class::before {
   content: '🖊️';
 }
-li.weekly-monthly::before {
-  content: '📹💌'
+li.weekly::before {
+  content: '📹'
+}
+li.monthly::before {
+  content: '💌'
 }
 
 /* desktop */
