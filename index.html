@@ -14,7 +14,7 @@
   <meta property="og:type" content="Personal site" />
   <meta property="og:description" content="Developer. Learner. Teacher. #devrel." />
   <meta name="author" content="Lizzie Siegle" />
-  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <script src="https://use.fontawesome.com/799b913516.js"></script> <!--book-->
   <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!--chess-->
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
@@ -48,37 +48,43 @@
         <li class = "goals">1/2 marathoner, future marathoner</li>
         <li class = "weekly"><a href = "https://twitch.tv/lizziepikachu" target="_blank">Weekly Twitch show</a> every Thursday</li>
         <li class = "monthly"><a href = "https://tinyletter.com/lizziepika" target="_blank">Monthly newsletter</a></li>
-        <li class="speak">A few talks<ul>
-          <li class = "speak_class"><a href = "https://www.youtube.com/watch?v=YdCH6614qt0" target="_blank">Deploying Intelligent Assistants @ <a href ="https://www.accelevents.com/e/l3ai" target="_blank">Rasa's L3 AI conf</a></li>
-          <li class = "speak_class"><a href = "https://ahoy.twilio.com/devgen_webinar_autopilot" target="_blank">Build a Chatbot w/ ML</a></li>
-          <li class = "speak_class"><a href="https://www.youtube.com/watch?v=vIL54AK7WNc" target="_blank">Git Fetch Coffee</a> @ <a
-          href="https://sf2019.devrel.net" target="_blank">DevRelCon SF 2019</a> & <a href="https://youtu.be/MnlAfVOVCaY"
-          target="_blank">SF DevRel</a></li>
-        <li class = "speak_class"><a href="https://www.youtube.com/watch?v=KUfua1cQR5E&list=PL-AEBFTXJ8jy5AIjpprHhn_dYsD2wHf0x&index=4&t=0s">Bots, AI, & CX</a> @ <a href="https://www.meetup.com/Messaging-Bots-London/"
-          target="_blank">Chatbots & Voice Assistants London</a></li>
-        <li class = "speak_class"><a href="https://skillsmatter.com/skillscasts/13325-swift-as-a-coursing-river-generate-a-song-with-hidden-markov-models-in-swift"
-          target="_blank">Swift as a Coursing River: Generate Lyrics w/ Markov Models in Swift</a> @ <a
-          href="https://skillsmatter.com/conferences/10823-ioscon-2019-the-conference-for-ios-and-swift-developers#skillscasts">iOSCon
-          2019</a></li>
-        <li class = "speak_class"><a href="https://www.youtube.com/watch?v=QYDlVb1Jp2I" target="_blank">Make Fun, Make Music w/ Node.js</a> @
-        <a href="https://queensjs.com" target="_blank">QueensJS</a> 2016 & <a href="http://caribbeandevconf.com"
-          target="_blank">Caribbean Dev Conf 2018</a></li>
-        <li class = "speak_class"><a href="https://www.youtube.com/watch?v=VqUDA9z6OfY" target="_blank">Parse HTML for Book Quotes with Beautiful
-          Soup</a> @ <a href="https://www.meetup.com/sfpython/events/256053250/" target="_blank">SF Python 2018</a></li>
-        <li class = "speak_class"><a href="https://www.youtube.com/watch?v=XSkp24X-8_E" target="_blank">Parse NBA Statistics w/ Openpyxl</a> @
-        <a href="https://pybay.com/" target="_blank">PyBay</a> 2018</li>
-        <li class = "speak_class"><a href="https://alterconf.com/speakers/lizzie-siegle" target="_blank">Diversity && Inclusion through
-          Hamilton</a> @ <a href="https://alterconf.com" target="_blank">AlterConf</a> NYC 2016</li>
-        <li class = "speak_class"><a href="https://www.slideshare.net/ElizabethLizzieSiegl/hackcon-2017howwhy-every-hackathon-should-be-like-a-womens-hackathon"
-          target="_blank">How && Why Every Hackathon should be like a Women's Hackathon</a> @ <a
-          href="https://hackcon.mlh.io/" target="_blank">HackCon 2017</a></li>
-        <li class = "speak_class"><a href="https://www.linkedin.com/pulse/sfhtml5-talk-googlesf-7292016-elizabeth-lizzie-siegle/"
-          target="_blank">Interning as a Developer Evangelist</a> @ <a href="https://www.meetup.com/sfhtml5/"
-          target="_blank">#SFHTML5</a> August 2016</li>
-        <li class = "speak_class">PubNub & Devangelist Interning 101 @ <a href="https://squarewomenghearnowcollegeedit.splashthat.com/"
-          target="_blank">Hear and Now</a> 2016</li>
-          </ul>
-        <li class = "press"> Selected press:
+        <div class="toggler">
+          <button id="talks">Selected talks🗣🎤</button>
+          <button id="press">Selected press📰🖊️</button>
+          <button id="hide">Hide🙈</button>
+        </div>
+        <div class="ex talks">
+            <li class = "speak_class"><a href = "https://www.youtube.com/watch?v=YdCH6614qt0" target="_blank">Deploying Intelligent Assistants @ <a href ="https://www.accelevents.com/e/l3ai" target="_blank">Rasa's L3 AI conf</a></li>
+            <li class = "speak_class"><a href = "https://ahoy.twilio.com/devgen_webinar_autopilot" target="_blank">Build a Chatbot w/ ML</a></li>
+            <li class = "speak_class"><a href="https://www.youtube.com/watch?v=vIL54AK7WNc" target="_blank">Git Fetch Coffee</a> @ <a
+            href="https://sf2019.devrel.net" target="_blank">DevRelCon SF 2019</a> & <a href="https://youtu.be/MnlAfVOVCaY"
+            target="_blank">SF DevRel</a></li>
+          <li class = "speak_class"><a href="https://www.youtube.com/watch?v=KUfua1cQR5E&list=PL-AEBFTXJ8jy5AIjpprHhn_dYsD2wHf0x&index=4&t=0s">Bots, AI, & CX</a> @ <a href="https://www.meetup.com/Messaging-Bots-London/"
+            target="_blank">Chatbots & Voice Assistants London</a></li>
+          <li class = "speak_class"><a href="https://skillsmatter.com/skillscasts/13325-swift-as-a-coursing-river-generate-a-song-with-hidden-markov-models-in-swift"
+            target="_blank">Swift as a Coursing River: Generate Lyrics w/ Markov Models in Swift</a> @ <a
+            href="https://skillsmatter.com/conferences/10823-ioscon-2019-the-conference-for-ios-and-swift-developers#skillscasts">iOSCon
+            2019</a></li>
+          <li class = "speak_class"><a href="https://www.youtube.com/watch?v=QYDlVb1Jp2I" target="_blank">Make Fun, Make Music w/ Node.js</a> @
+          <a href="https://queensjs.com" target="_blank">QueensJS</a> 2016 & <a href="http://caribbeandevconf.com"
+            target="_blank">Caribbean Dev Conf 2018</a></li>
+          <li class = "speak_class"><a href="https://www.youtube.com/watch?v=VqUDA9z6OfY" target="_blank">Parse HTML for Book Quotes with Beautiful
+            Soup</a> @ <a href="https://www.meetup.com/sfpython/events/256053250/" target="_blank">SF Python 2018</a></li>
+          <li class = "speak_class"><a href="https://www.youtube.com/watch?v=XSkp24X-8_E" target="_blank">Parse NBA Statistics w/ Openpyxl</a> @
+          <a href="https://pybay.com/" target="_blank">PyBay</a> 2018</li>
+          <li class = "speak_class"><a href="https://alterconf.com/speakers/lizzie-siegle" target="_blank">Diversity && Inclusion through
+            Hamilton</a> @ <a href="https://alterconf.com" target="_blank">AlterConf</a> NYC 2016</li>
+          <li class = "speak_class"><a href="https://www.slideshare.net/ElizabethLizzieSiegl/hackcon-2017howwhy-every-hackathon-should-be-like-a-womens-hackathon"
+            target="_blank">How && Why Every Hackathon should be like a Women's Hackathon</a> @ <a
+            href="https://hackcon.mlh.io/" target="_blank">HackCon 2017</a></li>
+          <li class = "speak_class"><a href="https://www.linkedin.com/pulse/sfhtml5-talk-googlesf-7292016-elizabeth-lizzie-siegle/"
+            target="_blank">Interning as a Developer Evangelist</a> @ <a href="https://www.meetup.com/sfhtml5/"
+            target="_blank">#SFHTML5</a> August 2016</li>
+          <li class = "speak_class">PubNub & Devangelist Interning 101 @ <a href="https://squarewomenghearnowcollegeedit.splashthat.com/"
+            target="_blank">Hear and Now</a> 2016</li>
+            </ul>
+          </div>
+          <div class="ex press">
           <ul>
             <li class = "press_class"><a href = "https://www.youtube.com/watch?v=McWLruCNW10" target="_blank">Serverless and SMS Chatbots on the Ops Show</a></li>
             <li class = "press_class"><a href="https://dev.to/drnugent/messaging-machine-learning-and-finding-your-devrel-calling-1f2p"
@@ -96,6 +102,7 @@
           Athletics</a></li>
         <li class = "press_class"><a href="https://medium.com/read-write-code/meet-a-tutor-lizzie-siegle-f218c81b2e1d" target="_blank">CodeHS</a></li>
       </ul>
+    </div>
         </ul>
     </div>
     </div>
@@ -144,7 +151,7 @@
       </div>
     </div>
   </footer>
-  <script src = "script.js"></script>
+  <script src = "js/script.js"></script>
 </body>
 
 </html>
