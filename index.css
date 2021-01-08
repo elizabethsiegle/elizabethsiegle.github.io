@@ -20,15 +20,15 @@ h1 {
 }
 a {
   /* color: #96979c; */
-  border-bottom: #EA215A 0.125em solid;
+  border-bottom:hotpink 0.125em dashed;
 }
 a:hover {
   font-weight: bold;
-  color: hotpink;
+  color: rgb(105, 255, 143);
 }
 /* unvisited link */
 a:link {
-  color: red;
+  color: rgb(47, 0, 255);
 }
 
 /* visited link */
