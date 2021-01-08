@@ -195,9 +195,8 @@ li.monthly::before {
 }
 #hide:active {
 	position:relative;
-	top:1px;
+	top:1%;
 }
-
 
 /* dark mode */
 body.dark-theme {
@@ -211,8 +210,8 @@ body.dark-theme a {
 /*dark mode button */
 .btn-toggle {
   position: fixed;
-  top: 25px;
-  right: 250px;
+  top: 5%;
+  right: 25%;
   box-shadow: 4px -8px 0px 0px #8a2a21;
 	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
 	background-color:#c62d1f;
