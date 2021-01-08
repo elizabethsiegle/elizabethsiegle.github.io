@@ -18,12 +18,33 @@ h1 {
   font-weight: 700;
   text-align: center;
 }
-
 a {
-  color: #000;
-  font-weight: 700;
-  text-decoration: none;
+  /* color: #96979c; */
+  border-bottom: #EA215A 0.125em solid;
 }
+a:hover {
+  font-weight: bold;
+  color: hotpink;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} */
 .typewrite {
   font-size: 2rem;
   line-height: 80%;
@@ -86,6 +107,39 @@ li.weekly::before {
 }
 li.monthly::before {
   content: '💌'
+}
+/* dark mode */
+body.dark-theme {
+  color: #eee;
+  background: #121212;
+}
+body.dark-theme a {
+  color: #809fff;
+}
+
+/*dark mode button */
+.btn-toggle {
+  position: fixed;
+  top: 25px;
+  right: 250px;
+  box-shadow: 4px -8px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:2px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-style:italic;
+	padding:6px 25px;
+	text-decoration:none;
+	text-shadow:6px -5px 0px #810e05;
+}
+.btn-toggle:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
 }
 
 /* desktop */
