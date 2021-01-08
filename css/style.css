@@ -44,10 +44,12 @@ a:hover {
 /* selected link */
 a:active {
   color: blue;
-} */
+} 
 .typewrite {
-  font-size: 2rem;
-  line-height: 80%;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 500;	   
+    color: #813eec;	   
+    font-size: 20pt;
 }
 
 ul {
