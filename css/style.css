@@ -176,7 +176,7 @@ li.monthly::before {
 }
 
 /*hide button display */
-#hide {
+#surprise {
 	box-shadow: 0px 0px 0px 2px #9fb4f2;
 	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
 	background-color:#7892c2;
@@ -191,11 +191,11 @@ li.monthly::before {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #283966;
 }
-#hide:hover {
+#surprise:hover {
 	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
 	background-color:#476e9e;
 }
-#hide:active {
+#surprise:active {
 	position:relative;
 	top:1%;
 }
@@ -213,7 +213,7 @@ body.dark-theme a {
 .btn-toggle {
   position: fixed;
   top: 5%;
-  right: 25%;
+  right: 5%;
   box-shadow: 4px -8px 0px 0px #8a2a21;
 	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
 	background-color:#c62d1f;
