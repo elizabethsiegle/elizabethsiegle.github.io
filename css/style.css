@@ -227,7 +227,7 @@ body.dark-theme a {
   font-style:italic;
   /* padding:5%; */
   text-decoration:none;
-  text-shadow:6px -5px 0px #810e05;
+  text-shadow:4% #810e05;
 }
 .btn-toggle:hover {
 	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
