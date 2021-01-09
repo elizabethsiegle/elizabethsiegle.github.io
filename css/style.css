@@ -215,19 +215,19 @@ body.dark-theme a {
   top: 5%;
   right: 5%;
   box-shadow: 4px -8px 0px 0px #8a2a21;
-	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-	background-color:#c62d1f;
-	border-radius:18px;
-	border:2px solid #d02718;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:16px;
-	font-style:italic;
-	padding:6px 25px;
-	text-decoration:none;
-	text-shadow:6px -5px 0px #810e05;
+  background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+  background-color:#c62d1f;
+  border-radius:5%;
+  border:2% solid #d02718;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:16px;
+  font-style:italic;
+  /* padding:5%; */
+  text-decoration:none;
+  text-shadow:6px -5px 0px #810e05;
 }
 .btn-toggle:hover {
 	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
