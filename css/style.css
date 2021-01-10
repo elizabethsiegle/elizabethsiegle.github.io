@@ -211,10 +211,10 @@ body.dark-theme a {
 
 /*dark mode button */
 .btn-toggle {
-  position: fixed;
+  position: absolute;
   top: 5%;
   right: 5%;
-  box-shadow: 4px -8px 0px 0px #8a2a21;
+  box-shadow: 2% #8a2a21;
   background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
   background-color:#c62d1f;
   border-radius:5%;
