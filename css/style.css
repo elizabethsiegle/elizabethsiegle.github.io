@@ -211,7 +211,8 @@ body.dark-theme a {
 
 /*dark mode button */
 .btn-toggle {
-  position: fixed;
+  position: absolute;
+  margin: 0 auto;
   top: 0.5;
   right: 2.5%;
   box-shadow: 2% #8a2a21;
