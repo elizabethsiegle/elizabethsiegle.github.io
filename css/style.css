@@ -211,7 +211,7 @@ body.dark-theme a {
 
 /*dark mode button */
 .btn-toggle {
-  position: absolute;
+  position: sticky;
   margin: 0 auto;
   top: 0.5;
   right: 2.5%;
@@ -227,6 +227,7 @@ body.dark-theme a {
   font-size:16px;
   font-style:italic;
   padding:-2.5%;
+  margin: 2.5%;
   text-decoration:none;
   text-shadow:4% #810e05;
 }
