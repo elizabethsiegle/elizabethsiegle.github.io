@@ -211,10 +211,10 @@ body.dark-theme a {
 
 /*dark mode button */
 .btn-toggle {
-  position: sticky;
+  position: absolute;
   margin: 0 auto;
-  top: 0.5;
-  right: 2.5%;
+  top: 0.25%;
+  right: 2%;
   box-shadow: 2% #8a2a21;
   background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
   background-color:#c62d1f;
@@ -226,7 +226,7 @@ body.dark-theme a {
   font-family:Arial;
   font-size:16px;
   font-style:italic;
-  padding:-2.5%;
+  padding:-1.5%;
   margin: 2.5%;
   text-decoration:none;
   text-shadow:4% #810e05;
