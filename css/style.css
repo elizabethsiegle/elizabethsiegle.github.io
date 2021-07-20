@@ -107,6 +107,9 @@ li.press_class::before {
 li.weekly::before {
   content: '📹'
 }
+li.scout::before {
+  content:'📈'
+}
 li.monthly::before {
   content: '💌'
 }
