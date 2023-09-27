@@ -1,0 +1,323 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Elizabeth (Lizzie) Siegle",
+    "label": "Developer && Evangelist @ Twilio | writer | events, etc. newsletter 💌: lizziepika.substack.com",
+    "image": "",
+    "email": "lizzie.siegle@gmail.com",
+    "phone": "(855) 302-1845",
+    "url": "https://www.lizziesiegle.xyz",
+    "summary": "I help developers be successful \n\nI'm a software dev💻, AI🤖 enthusiast, international + keynote speaker🎙, and proud Bryn Mawr Computer Science alumna (where I also played tennis.) \n\nAlso an event-organizer, community-builder , 4th gen. Bay Arean 🌁, 1/2 marathoner, marathoner-in-training🏃🏽.\n\nOutside of work: I write✍️ (fiction + housing/transit op-eds) and volunteer with SF YIMBY🚴🏻🏘. (Opinions are my own, !those of my employer.)\n\n- Twitch📺 show w/ guests like Guido van Rossum, Arlan Hamilton, Lyndsey Scott...: twitch.tv/lizziepikachu\n- code👩🏻💻: github.com/elizabethsiegle\n- etc: https://www.lizziesiegle.xyz",
+    "location": {
+      "address": "pick an airport, any airport (usu. SF, CA)"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "elsiegle",
+        "url": "https://www.linkedin.com/in/elsiegle/"
+      },
+      {
+        "network": "Twitter",
+        "username": "lizziepika",
+        "url": "https://twitter.com/lizziepika"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Twilio",
+      "position": "Senior Developer Evangelist (L3)",
+      "startDate": "2021-10-31",
+      "highlights": [],
+      "summary": "https://demo.twilio.com/docs/classic.mp3",
+      "url": "https://www.linkedin.com/company/twilio-inc-/",
+      "location": "San Francisco Bay Area"
+    },
+    {
+      "name": "Twilio",
+      "position": "Developer Evangelist (L2)",
+      "startDate": "2019-10-31",
+      "endDate": "2021-10-31",
+      "highlights": [],
+      "summary": "https://demo.twilio.com/docs/classic.mp3",
+      "url": "https://www.linkedin.com/company/twilio-inc-/",
+      "location": "San Francisco Bay Area"
+    },
+    {
+      "name": "Twilio Inc.",
+      "position": "Developer Evangelist (L1)",
+      "startDate": "2018-08-31",
+      "endDate": "2019-10-31",
+      "highlights": [],
+      "summary": "https://demo.twilio.com/docs/classic.mp3",
+      "url": "https://www.linkedin.com/company/twilio-inc-/",
+      "location": "San Francisco Bay Area"
+    },
+    {
+      "name": "Twilio Inc.",
+      "position": "Developer Education + Evangelism",
+      "startDate": "2017-09-30",
+      "endDate": "2018-07-31",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/twilio-inc-/",
+      "location": "Greater Philadelphia Area"
+    },
+    {
+      "name": "Twilio Inc.",
+      "position": "Developer Evangelist Intern",
+      "startDate": "2017-06-30",
+      "endDate": "2017-08-31",
+      "highlights": [],
+      "summary": "https://www.youtube.com/watch?v=QYDlVb1Jp2I",
+      "url": "https://www.linkedin.com/company/twilio-inc-/",
+      "location": "New York, New York, United States"
+    },
+    {
+      "name": "SoSpectra",
+      "position": "Co Director",
+      "startDate": "2016-02-28",
+      "endDate": "2019-08-31",
+      "highlights": [],
+      "summary": "- Planned + organized largest Bay Area hackathon for underrepresented genders\n- persuaded Lululemon + Benefit Cosmetics to sponsor the 2018 event despite never supporting a hackathon before\n• Led sponsorships, public relations, social media strategy, and marketing",
+      "url": "https://www.linkedin.com/company/sospectra/",
+      "location": "San Francisco Bay Area"
+    },
+    {
+      "name": "Department of Computer Science, Bryn Mawr College",
+      "position": "CS110 + CS206 Teaching Assistant",
+      "startDate": "2015-09-30",
+      "endDate": "2017-05-31",
+      "highlights": [],
+      "summary": "- Gave quite a few pointers on pointers\n- Led 2 2-hour lab sessions/week for CS110: Intro to CS and CS206: Data Structures; had a lot of regulars\n- Graded assignments",
+      "url": "https://www.linkedin.com/school/bryn-mawr-college/",
+      "location": "Greater Philadelphia Area"
+    },
+    {
+      "name": "CodeHS",
+      "position": "Tutor",
+      "startDate": "2015-07-31",
+      "endDate": "2017-12-31",
+      "highlights": [],
+      "summary": "- Graded coding assignments in Karel language \n- Answered questions\n- Clarified any confusion from students and teachers",
+      "url": "https://www.linkedin.com/company/codehs/",
+      "location": "San Francisco Bay Area"
+    },
+    {
+      "name": "PubNub",
+      "position": "Developer Evangelist Intern",
+      "startDate": "2016-05-31",
+      "endDate": "2016-08-31",
+      "highlights": [],
+      "summary": "- Developed iOS, Android, and web apps to showcase PubNub use cases<br>- Concluded each with a technical blog post<br>- Organized ping pong meetup with tech talk for local engineers, interns <br>-gave and assisted with web dev workshops (slides on SlideShare)<br>-gave tech-related talks at meetups like #SFHTML5 at Google SF and Square's WomEng Hear + Now <br>-and more! Check out this post: https://www.pubnub.com/blog/2016-08-25-what-its-like-to-intern-at-pubnub/",
+      "url": "https://www.linkedin.com/company/pubnub/",
+      "location": "San Francisco Bay Area"
+    },
+    {
+      "name": "Vea Fitness",
+      "position": "iOS Engineer Intern",
+      "startDate": "2016-01-31",
+      "endDate": "2016-04-30",
+      "highlights": [],
+      "location": "Greater Philadelphia Area"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "CoderDojo South Bay",
+      "position": "Mentor",
+      "startDate": "2015-07-31",
+      "endDate": "2016-08-31",
+      "highlights": []
+    },
+    {
+      "organization": "Urban Environmentalists",
+      "position": "SF Lead",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Bryn Mawr College",
+      "area": "Computer Science, English",
+      "studyType": "Bachelor's degree",
+      "startDate": "2014-12-31",
+      "endDate": "2018-12-31",
+      "score": "3.4",
+      "courses": [
+        "null - CS 231: Discrete Math",
+        "null - CS 240: Computer Organization",
+        "CS 330 - CS 330: algorithms",
+        "null - Math 215: Linear Algebra",
+        "null - CS 312: Computer Graphics",
+        "Haverford College - CS 245: Principles of Programming Languages",
+        "null - CS 246: Systems Programming",
+        "null - CS 371: Cognitive Science",
+        "null - CS 208: Speech Synthesis and Recognition",
+        "null - CS 380: Functional Programming (Haskell)",
+        "null - CS 372: Artificial Intelligence",
+        "null - CS 215: Human-Computer Interaction",
+        "Haverford College - CS 206: Data Structures"
+      ]
+    },
+    {
+      "institution": "Haverford College",
+      "area": "Computer Science",
+      "studyType": "Cross-registration, non-degree program",
+      "startDate": "2014-12-31",
+      "endDate": "2018-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "National ITA Scholar Athlete",
+      "date": "2018-12-31",
+      "awarder": "Intercollegiate Tennis Association",
+      "summary": ""
+    },
+    {
+      "title": "Google I/O Diversity Scholarship",
+      "date": "2016-05-31",
+      "awarder": "Women TechMakers",
+      "summary": "Diversity Scholarship (full ticket) to Google I/O 2016 at Shoreline Amphitheater. "
+    },
+    {
+      "title": "Bank of America Women in Tech Summit Fellow",
+      "date": "2015-07-31",
+      "summary": "Selected as one of sixteen college women to attend Bank of America's two-day women in tech summit in NYC with coding challenges, and technical panels and workshops on Big Data, Information Security, and Mobile Development."
+    },
+    {
+      "title": "Finalist",
+      "date": "2014-07-31",
+      "awarder": "Piazza Hack",
+      "summary": "Finalist at Piazza Hack 2015 held at Palantir in Stanford, CA."
+    }
+  ],
+  "certificates": [],
+  "publications": [{"Twilio tutorials":"https://twilio.com/blog/author/lsiegle"}],
+  "skills": [
+    {
+      "name": "OpenAI",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Public Speaking",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Teaching",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Community Outreach",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Writing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Event Planning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Fundraising",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Haskell",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "fluency": "Native Speaker",
+      "language": "English"
+    },
+    {
+      "fluency": "Elementary",
+      "language": "French"
+    },
+    {
+      "fluency": "Limited Working",
+      "language": "Mandarin"
+    }
+  ],
+  "references": [
+    {
+      "name": "Nupur Bhade Vilas",
+      "reference": "Lizzie = Energy. Energy = Lizzie. \nThere are few ways of describing Lizzie that doesn't include the word \"energy\". As a developer advocate and a public speaker, she is explosive and inspiring. Lizzie's ability to capture and room and weave compelling stories around complex technical products and solutions is simply put, outstanding. And I do not say that lightly: I have never seen as much applause by a talk or product demo as Lizzie inspires. \n\nWhen Lizzie joined Twilio, we truly lucked out. Her range of skills seems to know no bounds. Besides her \"real job\" as a developer evangelist, she takes on additional tasks outside of her work scope and completes them with perfection. Product Managers actively seek out Lizzie to help them evangelize their products. \n\nHere are just some of the things Lizzie does that are not her \"real job\" — social media management, writing documentation for our AI bot builder  (Autopilot), hackathon host, and more! I'm so happy to have met and worked with Lizzie. \n"
+    },
+    {
+      "name": "Stephen Blum",
+      "reference": "Lizzie 🎉🎉🎉"
+    },
+    {
+      "name": "ed schuler",
+      "reference": "I have known Lizzie for over 3 years.I was her tennis coach at San Mateo High School from2012-2014.She was he heart of the team for 3 years, serving as captain and being selected Most Valuable Player.In practice, she set tone for hard work,dedication,and never giving up, laying a strong foundation for others to follow.After she went away to college, she kept in touch and came back to help with tryouts and practices.She will always be a role model and mentor to future players  at her high school.I would highly recommend Lizzie in whatever field she pursues .Yours truly her coach Ed Schuler"
+    },
+    {
+      "name": "Khushali Desai",
+      "reference": "Elizabeth is enthusiastic,smart person.She led She++ Code Day event. She has commendable organizing capability. She gave me experience to lead my android workshop for first time. Which gave me lot of confident. She is brilliant at motivating and inspiring people. she believes in spreading knowledge and bringing more women in STEM. "
+    },
+    {
+      "name": "Shriya Nevatia",
+      "reference": "Lizzie is an extremely organized go-getter who makes sure that things happen. I was a panelist for She++ Code Day, which she organized & led, and she made sure that the event was well-attended, that speakers & workshop leaders were informed of everything necessary, and that the event itself was very valuable and fun for everyone involved. She has great organizational skills and can handle herself very well under time pressure & stress. I'm also working with her on Spectra, an all-female hackathon, and she is a great team member who is reliable & great to work with!"
+    }
+  ],
+  "projects": [
+      {
+          "name": "Replicate AI Arts+Crafts Hackathon",
+          "startDate": "2023-09-17",
+          "endDate": "2023-09-17",
+          "summary": "3rd place at AI hackathon: https://partiful.com/e/ac7NHwQ8ZLVIrkSHoVLP",
+          "url": "https://github.com/elizabethsiegle/ai-replicate-hackathon-CRINGAI"
+        },
+      {
+          "name": "Outside LLMs",
+          "startDate": "2023-08-05",
+          "endDate": "2023-08-05",
+          "summary": "BieberGPT--took home $150 prize",
+          "url": "https://devpost.com/software/biebergpt-auxv4s"
+      },
+    {
+      "name": "She++ Code Day",
+      "startDate": "2016-01-31",
+      "summary": "She++ Code Day, January 10, 2015\nOrganized event for 85+ attendees came at the Burlingame Library, featuring two keynote speakers, a panel of three college students and five industry professionals (from companies like Intuit, Yelp, and CodePath), and participate in workshops--Android development, Meteor.JS, UX Design, web design, and Python. More on this event on Medium: https://medium.com/@lizziepika/she-code-day-2016-4be611b92e82#.96hgxj9zb",
+      "url": "http://elizabethsiegle.github.io/codeday.html",
+      "endDate": "2016-01-31"
+    },
+    {
+      "name": "Singapore Memory Project iOS app",
+      "startDate": "2015-07-31",
+      "summary": "At Hackathon@SG San Francisco, we made an Apple watch app (with accompanying iPhone app) that displayed a memory from the Singapore Memory Project database based on location. We used Xcode's built-in map API. The watch showed a description of the memory, and, by swiping, showed a map with nearby memories and a graphic. The iPhone app showed a larger map.",
+      "url": "https://github.com/elizabethsiegle/SGHack50-2015",
+      "endDate": "2015-07-31"
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json",
+    "theme": "elegant"
+  }
+}
