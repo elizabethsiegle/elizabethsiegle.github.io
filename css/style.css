@@ -80,8 +80,24 @@ li.studied:before {
 li.thesis:before {
   content: '🎓';
 }
-
-
+li.code:before {
+  content:'👩🏻‍💻'
+}
+li.events:before {
+  content:'📆'
+}
+li.teach:before {
+  content:'👩🏻‍🏫'
+}
+li.write:before {
+  content:'📝'
+}
+li.fly:before {
+  content:'✈️'
+}
+li.video:before {
+  content:'📹'
+}
 li.lives:before {
   content: '🌁';
 }
