@@ -83,6 +83,9 @@ li.thesis:before {
 li.code:before {
   content:'👩🏻‍💻'
 }
+li.codestage:before {
+  content:'😇'
+}
 li.events:before {
   content:'📆'
 }
