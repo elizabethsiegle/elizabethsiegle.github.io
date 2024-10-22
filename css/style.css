@@ -53,6 +53,66 @@ a:active {
   margin-bottom: 25px;
 }
 
+.voter-guide {
+  padding: 50px;
+  margin-top: 100px;
+  position: relative;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.5; /* Increased line spacing */
+  color: #f2a365;
+  text-shadow: 2px 2px 5px rgba(166, 186, 217, 0.7);
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Firework animation */
+.firework {
+  width: 10px;
+  height: 10px;
+  background-color: #ffcc00;
+  position: absolute;
+  border-radius: 50%;
+  animation: firework-animation 2s infinite ease-in-out;
+  z-index: 0;
+}
+
+@keyframes firework-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+}
+
+.firework-1 {
+  top: -50px;
+  left: 20%;
+  animation-delay: 0.1s;
+}
+
+.firework-2 {
+  top: -100px;
+  left: 80%;
+  animation-delay: 0.3s;
+}
+
+.firework-3 {
+  top: -150px;
+  left: 50%;
+  animation-delay: 0.5s;
+}
+
 ul {
   list-style: none;
   margin: 2.0rem 0;
