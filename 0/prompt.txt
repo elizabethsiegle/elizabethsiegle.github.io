@@ -1,0 +1,61 @@
+add a /goals page on my website and link it from the bottom. 
+
+it should be like a GitHub contribution graph. Get the data from my Strava profile. Cite Ashe's /goals page which is here: https://ashe.ai/goals/
+
+there should be different colors for each date and workout type, like tennis, running, swimming, treadmill, walking, biking, pickleball, yoga, and pilates. i am running big sur marathon in April. 
+
+it should also make a GitHub contribution-like graph for my reading from my Goodreads or Storygraph or SF Public Library account. in that regard, it could be less like a /goals page and more like a "how Lizzie is feeling" page based on travel days (pulled from my calendar)
+
+---
+
+add a /goals page on my website and link it from the bottom. 
+
+it should be like a GitHub contribution graph. Get the data from my Strava profile. Cite Ashe's /goals page which is here: https://ashe.ai/goals/
+
+there should be different colors for each date and workout type, like tennis, running, swimming, treadmill, walking, biking, pickleball, yoga, and pilates. i am running big sur marathon in April. 
+
+it should also make a GitHub contribution-like graph for my reading from my Goodreads or Storygraph or SF Public Library account. in that regard, it could be less like a /goals page and more like a "how Lizzie is feeling" page based on travel days (pulled from my calendar)
+
+---
+
+Strava profile link: https://www.strava.com/athletes/37425418
+client id: 46109
+and i can paste access token and client secret as well. For calendar--google map api?
+
+---
+
+Strava profile link: https://www.strava.com/athletes/37425418
+client id: 46109
+and i can paste access token and client secret as well. For calendar--google map api?
+
+---
+
+i cant find that calendar info
+
+---
+
+ok added cal url
+
+---
+
+ok added cal url
+
+---
+
+File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 561, in error
+    return self._call_chain(*args)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 641, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
+
+---
+
+lizzie@entire.io ~/Desktop/web/elizabethsiegle.github.io % python3 scripts/sync-goals.py
+goodreads: synced 97 entries.
+strava: Strava denied access to workout history (HTTP 401). Reauthorize the app with activity:read; refreshing a token does not add missing permissions. Previous data kept.
+calendar: Google Calendar returned HTTP 404. Previous data kept.
+Saved successful imports to dist/goals/data.json.
+lizzie@entire.io ~/Desktop/web/elizabethsiegle.github.io % python3 scripts/sync-goals.py --only calendar
+calendar: Google Calendar returned HTTP 404. Previous data kept.
