@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lizzies-blog",
+  "compatibility_date": "2026-08-20",
+  "workers_dev": true,
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "dist"
+  },
+  "routes": [
+    {
+      "pattern": "lizziesiegle.com",
+      "custom_domain": true
+    }
+  ]
+}
